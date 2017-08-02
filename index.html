@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARIA Live Regions</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>ARIA Live Regions</h1>
+
+<select size="1" id="bird-selector" aria-controls="bird-info" onchange="updateBirdInfo()">
+    <option value="eagle">Eagle</option>
+    <option value="hawk">Hawk</option>
+    <option value="owl">Owl</option>
+    <option value="sparrow">Sparrow</option>
+    <option value="tui">Tui</option>
+</select>
+
+<div role="region" id="bird-info" aria-live="polite">
+</div>
+
+<script src="js/aria-live-regions.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

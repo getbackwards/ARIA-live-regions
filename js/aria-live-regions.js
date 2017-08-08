@@ -1,8 +1,3 @@
-// const select = document.querySelector('#bird-selector');
-// const selectValue = select.options[select.selectedIndex].text;
-//
-// console.log(selectValue);
-
 function updateBirdInfo() {
 
     const selectedValue = document.querySelector('#bird-selector').value;
@@ -23,13 +18,8 @@ function updateBirdInfo() {
         default:
             birdInfo = "Some information about the Eagle";
     }
-    // var x = document.getElementById("mySelect").value;
 
-    // document.querySelector("#bird-info").innerHTML = "You selected: " + selectedValue;
     document.querySelector("#bird-info").innerHTML = birdInfo;
-    console.log(selectedValue);
-
-
 }
 
 
